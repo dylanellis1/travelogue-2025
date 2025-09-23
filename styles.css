@@ -1,0 +1,42 @@
+/* Base and Font */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f8fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+    background: linear-gradient(135deg, #5f9be6 0%, #8fd3f4 100%);
+    color: #fff;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  header p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Layout */
+  main {
+    max-width: 900px;
+    margin: 3rem auto;
+    display: grid;
+    gap: 3rem;
+  }
+  
