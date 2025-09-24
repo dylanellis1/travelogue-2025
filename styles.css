@@ -3,40 +3,107 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  body {
+}
+
+body {
     font-family: 'Poppins', sans-serif;
     background: #f7f8fa;
     color: #333;
     line-height: 1.6;
     padding: 0 1rem;
-  }
-  
-  /* Header */
-  header {
+}
+
+/* Header */
+header {
     text-align: center;
     padding: 4rem 1rem 2rem;
     background: linear-gradient(135deg, #5f9be6 0%, #8fd3f4 100%);
     color: #fff;
     border-radius: 0 0 2rem 2rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-  header h1 {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-  }
-  header p {
+}
+
+header p {
     font-weight: 400;
     font-size: 1.2rem;
     opacity: 0.9;
-  }
-  
-  /* Layout */
-  main {
+}
+
+/* Layout */
+main {
     max-width: 900px;
     margin: 3rem auto;
     display: grid;
     gap: 3rem;
-  }
-  
+}
+
+/* Each location section */
+section {
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1.5rem;
+    color: #2d5ca8;
+}
+
+/* Images & captions */
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    background: #f0f3f8;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    color: #555;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Paragraph text */
+section p {
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
